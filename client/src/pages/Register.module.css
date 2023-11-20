@@ -1,0 +1,72 @@
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.register h1 {
+  color: #fff;
+}
+
+.register input {
+  margin: 15px 0px;
+  padding: 10px 50px;
+}
+
+.register label {
+  text-align: left;
+  color: #fff;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+}
+
+.registerButton {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.redirectButton {
+  color: #fff;
+  margin-top: 10px;
+  text-align: left;
+}
+.register span {
+  color: red;
+  margin-top: 5px;
+}

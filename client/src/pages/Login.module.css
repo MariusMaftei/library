@@ -1,0 +1,72 @@
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.login h1 {
+  color: #fff;
+}
+
+.login input {
+  margin: 15px 0px;
+  padding: 10px 50px;
+}
+
+.login label {
+  text-align: left;
+  color: #fff;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+}
+
+.loginButton {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.loginButton:disabled {
+  cursor: not-allowed;
+}
+
+.redirectButton {
+  margin-top: 10px;
+  text-align: left;
+  color: #fff;
+}

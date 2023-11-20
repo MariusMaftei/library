@@ -1,0 +1,22 @@
+.singleBook {
+  width: 100vw;
+  min-height: 100;
+  height: fit-content;
+  display: flex;
+
+  justify-content: space-between;
+  background-color: rgb(24, 20, 18);
+}
+
+.singleBook > :nth-child(1) {
+  justify-content: flex-start;
+}
+
+.singleBook > :nth-child(2) {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.singleBook > :nth-child(3) {
+  justify-content: flex-end;
+}

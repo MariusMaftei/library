@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .container {
+    margin: 30px;
+  }
+}
+
+.firstPage {
+  width: 520px;
+  height: 777px;
+  background-color: #e7e5e2;
+  transform: rotateZ(-8deg);
+  box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.8);
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .firstPage {
+    width: 420px;
+    height: 677px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .firstPage {
+    width: 270px;
+    height: 430px;
+  }
+}
+
+.secondPage {
+  width: 520px;
+  height: 777px;
+  background-color: #e7e5e2;
+  transform: rotateZ(4deg);
+  box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.3);
+}
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .secondPage {
+    width: 420px;
+    height: 677px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .secondPage {
+    width: 270px;
+    height: 430px;
+  }
+}
+
+.thirdPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 520px;
+  height: 777px;
+  background-color: #e7e5e2;
+  transform: rotateZ(4deg);
+  box-shadow: 1px 1px 2px 2px rgba(50, 50, 50, 0.2);
+}
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .thirdPage {
+    width: 420px;
+    height: 677px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .thirdPage {
+    width: 270px;
+    height: 430px;
+    max-height: 100%;
+  }
+}
+
+.thirdPage textarea {
+  font-size: 24px;
+  width: 400px;
+  height: 700px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .thirdPage textarea {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .thirdPage textarea {
+    width: 200px;
+    height: 350px;
+  }
+}

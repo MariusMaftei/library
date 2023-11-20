@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  text-align: center;
+  height: 500px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.container img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #fff;
+  z-index: 10;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .title {
+    font-size: 60px;
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .title {
+    top: 25%;
+    font-size: 40px;
+  }
+}
+.description {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #fff;
+  z-index: 10;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .description {
+    top: 60%;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  background-color: rgb(24, 20, 18);
+  height: 100vh;
+}
+
+.home {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  height: fit-content;
+  justify-content: space-between;
+  background-color: rgb(24, 20, 18);
+}
+
+.home > :nth-child(1) {
+  justify-content: flex-start;
+}
+
+.home > :nth-child(2) {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home > :nth-child(3) {
+  justify-content: flex-end;
+}

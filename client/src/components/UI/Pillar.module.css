@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img:last-child {
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .container img:last-child {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .container img:first-child {
+    height: 30px;
+  }
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #6c4023;
+  width: 60px;
+  height: 100%;
+  box-shadow: 5px 1px 5px rgb(0, 0, 0, 0.5);
+  border-radius: 3px 3px 0px 0px;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .pillar {
+    width: 20px;
+  }
+}
+
+.pillar .firstVerticalLine {
+  background-color: #0e0c0d;
+  width: 4px;
+  height: 100%;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .pillar .firstVerticalLine {
+    width: 1px;
+    margin-left: 5px;
+  }
+}
+
+.pillar .secondVerticalLine {
+  background-color: #0e0c0d;
+  width: 4px;
+  height: 100%;
+  margin-left: 14px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .pillar .secondVerticalLine {
+    width: 1px;
+    margin-left: 4px;
+  }
+}
+
+.pillar .thirdVerticalLine {
+  background-color: #0e0c0d;
+  width: 4px;
+  height: 100%;
+  margin-left: 16px;
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .pillar .thirdVerticalLine {
+    width: 1px;
+    margin-left: 4px;
+  }
+}
+
+.footerContent li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}

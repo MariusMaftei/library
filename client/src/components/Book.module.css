@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 80px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .container {
+    margin: 30px;
+  }
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* BOOK CLASSES */
+
+.book {
+  position: relative;
+  width: 290px;
+  height: 370px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .book {
+    width: 190px;
+    height: 270px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+}
+
+.book:hover {
+  transform: scale(1.1);
+}
+
+.bookCoverInfo {
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  position: relative;
+}
+
+.coverImage {
+  position: absolute;
+  left: 5%;
+  top: 1%;
+  z-index: 10;
+}
+
+.coverImage img {
+  width: 265px;
+  height: 355px;
+  border-radius: 2%;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .coverImage img {
+    width: 165px;
+    height: 245px;
+    border-radius: 2%;
+    margin-top: 5px;
+  }
+}
+
+.bookType {
+  position: relative;
+  color: rgb(202, 202, 183);
+  font-size: 18px;
+  font-weight: bolder;
+  padding-top: 20px;
+  z-index: 20;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .bookType {
+    font-size: 16px;
+  }
+}
+
+.title {
+  font-size: 30px;
+  position: relative;
+  color: white;
+  margin-top: 30px;
+  padding: 10px;
+  z-index: 20;
+  word-wrap: break-word;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .title {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+
+.subTitle {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  font-size: 24px;
+  z-index: 20;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .subTitle {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+}
+
+.author {
+  font-size: 14px;
+  position: relative;
+  z-index: 20;
+  color: #fff;
+  margin-top: 100px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .author {
+    font-size: 10px;
+    margin-top: 50px;
+  }
+}
+
+.author i {
+  color: rgb(241, 232, 232, 0.8);
+  font-size: 14px;
+}
+
+.date {
+  position: relative;
+  padding: 5px 15px 0px 0px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  z-index: 20;
+  text-align: right;
+  margin-top: 60px;
+}
+
+/* SINGLE BOOK PAGE CLASSES */
+
+.singleBook {
+  position: relative;
+  width: 550px;
+  height: 750px;
+  perspective: 2200px;
+  transform-style: preserve-3d;
+}
+
+@media screen and (min-width: 620px) and (max-width: 900px) {
+  .singleBook {
+    width: 350px;
+    height: 530px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+.singleBook .coverImage img {
+  width: 500px;
+  height: 730px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .singleBook .coverImage img {
+    width: 320px;
+    height: 510px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook .coverImage img {
+    width: 180px;
+    height: 280px;
+  }
+}
+
+.singleBook .bookType {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .singleBook .bookType {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook .bookType {
+    font-size: 1.1rem;
+  }
+}
+
+.singleBook .title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .singleBook .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook .title {
+    font-size: 1.5rem;
+  }
+}
+
+.singleBook .subTitle {
+  font-size: 2.5rem;
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .singleBook .subTitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook .subTitle {
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+}
+
+.singleBook .author {
+  font-size: 1.5rem;
+  margin-top: 310px;
+  padding-right: 50px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .singleBook .author {
+    font-size: 1.1rem;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook .author {
+    font-size: 0.8rem;
+    margin-top: 50px;
+  }
+}
+
+.singleBook .author i {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .singleBook .author i {
+    font-size: 0.8rem;
+  }
+}
+
+.pageText {
+  padding: 20px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .pageText {
+    padding: 1px;
+  }
+}
+
+.pageText::first-letter {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .pageText::first-letter {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .pageText::first-letter {
+    font-size: 1rem;
+    margin-left: 25px;
+  }
+}
+
+.pageText p {
+  color: #101112;
+  font-size: 1.6rem;
+  text-align: left;
+  word-wrap: break-word;
+  font-family: "Lato", sans-serif;
+  font-family: "Verdana", sans-serif;
+  word-spacing: 3px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .pageText p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .pageText p {
+    word-spacing: normal;
+    font-size: 0.7rem;
+  }
+}
+
+.singleBook:hover .front {
+  transform: rotateY(-145deg) translateZ(0);
+}
+
+.singleBook:hover > .page li:nth-child(1) {
+  transform: rotateY(-30deg);
+  transition: 1.5s;
+}
+
+.singleBook:hover > .page li:nth-child(2) {
+  transform: rotateY(-35deg);
+  transition: 1.8s;
+}
+
+.singleBook:hover > .page li:nth-child(3) {
+  transform: rotateY(-118deg);
+  transition: 1.6s;
+}
+.singleBook:hover > .page li:nth-child(4) {
+  transform: rotateY(-130deg);
+  transition: 1.4s;
+}
+.singleBook:hover > .page li:nth-child(5) {
+  transform: rotateY(-140deg);
+  transition: 1.2s;
+}
+
+/* WRITE PAGE BOOK CLASSES */
+
+.closedBook {
+  position: relative;
+  width: 550px;
+  height: 720px;
+  perspective: 2200px;
+  transform-style: preserve-3d;
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  .closedBook {
+    position: relative;
+    width: 490px;
+    height: 650px;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .closedBook {
+    margin-top: 30px;
+    position: relative;
+    width: 260px;
+    height: 350px;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+  }
+}
+
+.writeBookInputs {
+  position: relative;
+  z-index: 20;
+}
+
+.customInputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.imageInput {
+  position: relative;
+  z-index: 20;
+}
+
+.colorInput {
+  position: relative;
+  z-index: 20;
+}
+
+.front li {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.back {
+  background: linear-gradient(to top, #39210f, #39210f, #39210f, #311c12);
+  border-radius: 10px;
+  width: 97.5% !important;
+}
+
+.page > li {
+  background: -webkit-linear-gradient(to left, #e1ddd8 0%, #fffbf6 100%);
+  background: linear-gradient(to left, #e1ddd8 0%, #fffbf6 100%);
+
+  box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
+    inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+  border-radius: 0px 5px 5px 0px;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+}
+
+.front {
+  transform: rotateY(-34deg) translateZ(8px);
+}
+
+.back {
+  transform: rotateY(1deg) translateZ(-8px);
+}
+
+.page li:nth-child(1) {
+  transform: rotateY(-28deg);
+}
+
+.page li:nth-child(2) {
+  transform: rotateY(-30deg);
+}
+.page li:nth-child(3) {
+  transform: rotateY(-32deg);
+}
+.page li:nth-child(4) {
+  transform: rotateY(-34deg);
+}
+.page li:nth-child(5) {
+  transform: rotateY(-36deg);
+}
+
+.front,
+.back,
+.front li,
+.back li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  transform-origin: 0% 100%;
+}
+
+.front {
+  z-index: 1;
+  transition: all 0.8s ease;
+}
+
+.front li:last-child {
+  transform: rotateY(180deg) translateZ(2px);
+}
+
+.page,
+.page > li {
+  position: absolute;
+}
+
+.page {
+  width: 100%;
+  height: 98%;
+  top: 1%;
+  left: 3%;
+}
+
+.page li {
+  transition-duration: 0.6s;
+}
+
+.frontCover {
+  position: absolute;
+  top: 0;
+  background: rgb(50, 25, 6);
+  background: linear-gradient(
+    267deg,
+    rgba(50, 25, 6, 1) 32%,
+    rgba(45, 22, 5, 1) 71%,
+    rgba(22, 12, 4, 1) 100%,
+    rgba(55, 29, 10, 1) 100%,
+    rgba(65, 33, 8, 1) 100%,
+    rgba(11, 6, 1, 1) 156%
+  );
+  height: 101%;
+  width: 101%;
+  border-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

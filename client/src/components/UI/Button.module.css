@@ -1,0 +1,18 @@
+.button button {
+  font-size: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: black;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+  transition-property: box-shadow, transform;
+}
+
+.button button:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+}
